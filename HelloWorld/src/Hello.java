@@ -10,6 +10,11 @@ public class Hello {
       Date date = new Date();
       System.out.println(dateFormat.format(date));
       
+      int mb = 1024 * 1024; 
+      Runtime instance = Runtime.getRuntime();
+      System.out.println("Free Memory: " + instance.freeMemory() / mb);
+
+      
       System.out.println("Hello World!");
       System.out.println("Listen.");
       System.out.println("Look around.");
